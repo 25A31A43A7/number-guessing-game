@@ -4,11 +4,13 @@
 
 int main() {
     int number, guess, attempts = 0;
+    char a[50];
 
     srand(time(0));
     number = rand() % 100 + 1;
-
-    printf("Welcome to the Number Guessing Game!\n");
+     printf("Enter your name");
+    scanf("%s",a[i]);
+    printf("Welcome %s to the Number Guessing Game!\n",a[i]);
 
     do {
         printf("Enter your guess: ");
