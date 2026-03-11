@@ -8,9 +8,9 @@ int main() {
 
     srand(time(0));
     number = rand() % 100 + 1;
-     printf("Enter your name");
-    scanf("%s",a[i]);
-    printf("Welcome %s to the Number Guessing Game!\n",a[i]);
+     printf("Enter your name:");
+    scanf("%s",a);
+    printf("Welcome %s to the Number Guessing Game!\n",a);
 
     do {
         printf("Enter your guess: ");
