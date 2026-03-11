@@ -1,10 +1,37 @@
-# Number Guessing Game
+# Number Guessing Game (C)
 
-This is a simple C console game.
+A simple console based number guessing game written in C.
 
-Features:
+## Features
 - Random number generation
 - User input
-- Loop based gameplay
+- Hint system (Too high / Too low)
+- Score tracking
 
-Language: C
+## How to Run
+
+1. Compile the program
+
+gcc game.c -o game
+
+2. Run the program
+
+./game
+
+## Example Output
+
+Enter your guess: 50
+Too high!
+
+Enter your guess: 25
+Too low!
+
+Enter your guess: 37
+Correct!
+
+## Technologies Used
+- C Programming
+- GCC Compiler
+
+## Author
+Aditya Inguva
