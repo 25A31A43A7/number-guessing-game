@@ -1,28 +1,32 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
 
 int main() {
     int number, guess, attempts = 0;
-    char a[50];
+    string name;
 
     srand(time(0));
     number = rand() % 100 + 1;
-     printf("Enter your name:");
-    scanf("%s",a);
-    printf("Welcome %s to the Number Guessing Game!\n",a);
+
+    cout << "Enter your name: ";
+    cin >> name;
+
+    cout << "Welcome " << name << " to the Number Guessing Game!" << endl;
 
     do {
-        printf("Enter your guess: ");
-        scanf("%d", &guess);
+        cout << "Enter your guess: ";
+        cin >> guess;
+
         attempts++;
 
         if (guess > number)
-            printf("Too high!\n");
+            cout << "Too high!" << endl;
         else if (guess < number)
-            printf("Too low!\n");
+            cout << "Too low!" << endl;
         else
-            printf("Correct! Attempts: %d\n", attempts);
+            cout << "Correct! Attempts: " << attempts << endl;
 
     } while (guess != number);
 
