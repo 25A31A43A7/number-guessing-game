@@ -1,6 +1,6 @@
-# Number Guessing Game (C)
+# Number Guessing Game (C++)
 
-A simple console based number guessing game written in C.
+A simple console based number guessing game written in C++.
 
 ## Features
 - Random number generation
@@ -30,7 +30,7 @@ Enter your guess: 37
 Correct!
 
 ## Technologies Used
-- C Programming
+- C++ Programming
 - GCC Compiler
 
 ## Author
